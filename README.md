@@ -1,12 +1,30 @@
-# React + Vite
+1. Install the GitHub Pages package (if using Create React App):
+npm install gh-pages --save-dev
+2. Add the following lines to your package.json:
+"homepage": "https://yourusername.github.io/repo-name",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+3. Initialize a Git repository (if not done already):
+   git init
+git remote add origin https://github.com/yourusername/repo-name.git
 
-Currently, two official plugins are available:
+4. Deploy the app to GitHub Pages:
+   npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+   🚀 Features
+🎯 Select a number between 1 and 6.
+
+🎲 Roll a dice and get a random value.
+
+✅ Gain points if selected number matches dice roll.
+
+❌ Lose 2 points if it doesn't match.
+
+🔁 Reset functionality to restart the game.
+
+⚠️ Error handling if dice is rolled without selection.
